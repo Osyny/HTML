@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>#2</title>
+    <!-- Bootstrap -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <link href="css/mystyle.css" rel="stylesheet">
+
+    <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+      <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->
+	
+	<style>
+       
+		.item
+		{
+			width: 150px;
+			height: 270px;
+			border: 2px solid red;
+			margin: 25px;
+			
+			float: left;			
+			position:relative;		
+		}
+		
+		.container
+		{
+			margin: 22px;			
+		}
+		
+		#fig img
+		{
+			position:absolute;
+			top: 15px;
+		}
+		#sTitle
+		{
+			position:absolute;
+			top: 110px;
+			left:40px;
+			
+		}
+		.container button
+		{
+			position:absolute;
+			top: 160px;
+			left:35px;
+		}
+		
+		.modal
+		{
+			display: none;
+			position: fixed;
+			z-index: 1;
+			
+			width: 250px;
+			height: 300px;
+			border: 3px solid red;
+			margin: 250px;
+			background: white;
+			
+			
+		}
+		#modalImg
+		{	
+			margin-top: 15px;
+			margin-left: 80px;
+		}
+		#info
+		{
+			margin-top: 5px;
+			margin-left: 30px;
+		}
+		#Ok
+		{
+			
+			margin-left: 100px;
+		}
+
+    </style>
+	
+  </head>
+  <body>
+	<div class="item">
+		<div class="container">
+			<figure id="fig">
+				<img src="images/1.png" alt="picture description1" >
+				<figcaption id="sTitle">Some title1</figcaption>
+			</figure>
+			<button class="butClick">Show info</button>
+		</div>	
+	</div>
+	<div class="item">
+		<div class="container">
+			<figure id="fig">
+				<img src="images/firefox.png" alt="picture description2">
+				<figcaption id="sTitle">Some title2</figcaption>
+			</figure>
+			<button class="butClick">Show info</button>
+		</div>
+	</div>
+	<div class="item">
+		<div class="container">
+			<figure id="fig">
+				<img src="images/opera.png" alt="picture description3">
+				<figcaption id="sTitle">Some title3</figcaption>
+			</figure>
+			<button class="butClick">Show info</button>
+		</div>
+	</div>
+
+	<div id = "modalWindow" class="modal">	
+		<div id="modalImg">			
+		</div>		
+		<hr>	
+		<div id="info">			
+		</div>
+		<hr>
+		<div id="Ok">			
+		</div>
+	</div>
+	<script>
+		var modal = document.getElementById('modalWindow');
+		
+		var modalImg = document.getElementById('modalImg');
+		var info = document.getElementById('info');
+		var okBtn = document.getElementById('Ok');
+		
+		okBtn.onclick =	function()
+		{
+			console.log("Ok clicked!!!");
+			modal.style.display = "none";
+		}
+		
+		HTMLCollection.prototype.addListener = function(eventName, handler)
+		{
+			for(i = 0; i < this.length; i++)
+			{
+				this[i].addEventListener(eventName, handler);
+			}
+		};
+		function moveEl(el)
+		{
+			console.log("Show info clicked:");
+			console.log("---------------------");
+			console.log("el: " + el.children.length);
+			var imgChild = el.children[0].children[0];
+			console.log("imgChild: " + imgChild.tagName);
+			var imgSrc = imgChild.getAttribute('src');
+			var imgAlt = imgChild.getAttribute('alt');
+			console.log("imgSrc: " + imgSrc);
+			console.log("imgAlt: " + imgAlt);
+			
+			var captionChild = el.children[0].children[1];
+			var captionTitle = captionChild.innerHTML;
+			console.log("captionTitle: " + captionTitle);
+			console.log("---------------------");
+			
+			modal.style.display = "block";
+			
+			modalImg.innerHTML = '';
+			modalImg.innerHTML += "<img src='" + imgSrc + "'>";
+			
+			info.innerHTML = '';
+			info.innerHTML += "<p>Описание: <span class='bol'>"+imgAlt+"</span></p><p>Путь: <span class='bold'>"+imgSrc+"</span></p><p>Title: <span class='bold'>"+captionTitle+"</span></p>";
+
+			okBtn.innerHTML = '';
+			okBtn.innerHTML += "<button style='background-color:red'>Ok</button>";			
+		}
+		
+		function handler()
+		{					
+			moveEl(this.parentNode);
+		}
+		
+		document.getElementsByClassName('butClick').addListener('click', handler);
+		
+	</script>
+  </body>
+</html>
