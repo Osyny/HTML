@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width">
+    <title>Indentfic</title>
+	
+	 <!-- Bootstrap -->
+    <link href="assets/css/bootstrap.min.css" rel="stylesheet">
+    <link href="assets/css/mystyle.css" rel="stylesheet">
+	
+    <script src="assets/js/jquery-3.2.1.min.js"></script>
+	<script src="assets/js/bootstrap.min.js"></script>
+	
+</head>
+<body>
+
+	<style>
+		.conteiner
+		{
+			margin-top:50px;
+			margin-left:100px;
+		}
+		#zsilka
+		{
+			margin-top:50px;
+			margin-left:20px;
+		}
+	</style>
+	
+	<a id="zsilka" href="index.html">Home</a>
+	
+		<div class="conteiner">
+			
+			<form id="regForm">
+				<input type="text" id="log" name="login" value="" placeholder="Enter login"/>
+				<input type="password" id="pass" name="pass" value="" placeholder="Enter password"/>
+				<button id="go"> Input </button>
+			<form>
+		</div>
+
+	<script>
+	
+/*	$.get('api/category/getAll', {}, function(data)
+    {
+		console.log(data);
+    }, 'json');*/
+	
+		$(document).ready(function()
+		{
+			$('#go').click(function()
+			{	
+				 
+					var login = $("#log").val();
+					var password = $("#pass").val();
+					console.log("login:"+login+"+ pwd:"+password);
+					
+					if(login !="" && password != "")
+					{
+						$.post('api/main/login', {login:login, password:password}, function(data)
+						{
+							console.log("data: " + data);
+							alert('Ok !!!');
+						});
+						
+						$("#regForm").submit( function() 
+						{
+						   return false;	
+						});	
+						
+					}
+					else
+					{
+						alert('All Fields are required!');
+					}
+					
+				 
+			});
+		});
+	</script>	
+</body>
+</html>

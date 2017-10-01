@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width">
+    <title>Title</title>
+	
+	 <!-- Bootstrap -->
+    <link href="assets/css/bootstrap.min.css" rel="stylesheet">
+    <link href="assets/css/mystyle.css" rel="stylesheet">
+	
+    <script src="assets/js/jquery-3.2.1.min.js"></script>
+	<script src="assets/js/bootstrap.min.js"></script>
+	
+</head>
+<body>
+	<style>
+		#btn{
+			margin: 5px;
+		}
+		.conteiner
+		{
+			width: 80%;
+			border: 1px solid;
+			
+			margin-top: 200px;
+			margin-left :50px;
+			
+		}
+		.form-group
+		{
+			width:95%;
+			margin: 0 auto;
+		}
+		.btn
+		{
+			margin: 30px;
+			margin-bottom:30px;
+		}
+	</style>
+	
+
+		<a id="check" href="identificat.html">CheckIn</a> 
+	
+		<div class="conteiner">
+			<form  id="myForm">
+				  <div class="form-group">
+						<label  for="exampleInputEmail1">Login</label>
+						<input type="text" 
+							   class="form-control validate" 
+							   id="login" 
+							   placeholder="Enter login"
+							   name="filds1">
+							   <!--Atrebut 
+							   data-rules="minLength required">-->
+				  </div>
+				  <div class="form-group">
+						<label for="exampleInputEmail1">Password</label>
+						<input type="text" 
+							   class="form-control validate" 
+							   id="password" 
+							   placeholder="Enter password"
+							   name="filds1">
+							   <!--Atrebut 
+							   data-rules="minLength required">-->
+				  </div>
+				  <div class="form-group">
+						<label for="exampleInputEmail1">Confirm_password</label>
+						<input type="text" 
+							   class="form-control validate" 
+							   id="confPassword" 
+							   placeholder="Enter confirm_password"
+							   name="filds1">
+							   <!--Atrebut 
+							   data-rules="minLength required">-->
+				  </div>
+				  <div class="form-group">
+						<label for="exampleInputEmail2">Email</label>
+						<input type="text" 
+							   class="form-control validate" 
+							   id="email" 
+							   placeholder="Enter email"
+							   name="filds2">
+				  </div>
+				  
+				  			  
+				<button type="submit" class="btn btn-default">Отправить</button>
+			</form>
+		</div>	
+	
+	<script>
+	   $.get('api/category/getAll', {}, function(data)
+	   {
+			console.log(data);
+	   }, 'json');
+	   
+	  
+
+		$(document).ready(function(){
+			$('.btn').click(function(){
+				
+				// LOGIN
+				var login = $('#login').val();
+				var expLogin = /^[a-zA-Z0-9_]+$/g;
+				var resLogin = login.search(expLogin);
+				
+				//PASWORD
+				var password = $('#password').val();
+	
+				var confPassword = $("#confPassword").val();
+				
+				//EMAIL
+				var email = $("#email").val();
+				var expEmail = /^\w{1,}@\w{1,}\.\w{2,}$/;
+				var resEmail = login.search(expEmail);
+				
+				if(resLogin = -1 )
+				{
+					if ((login != '' && password != '' && confPassword !='' && email != '') && password == confPassword)
+					{
+						$.post('api/main/registration', {login:login, password:password, password_confirm:confPassword, email:email}, function(data, status)
+						{
+							console.log("data: " + data + ", status: " + status);
+							alert('Successfully logged in !!!');
+						});
+
+						
+						$("#myForm").submit( function() 
+						{
+						   return false;	
+						});
+					}
+					else
+					{
+						alert('All Fields are required!');
+					}
+				}
+				else
+					alert('ERROR! ');
+					
+			});
+		});
+		
+		
+
+
+	</script>
+
+</body>
+</html>
