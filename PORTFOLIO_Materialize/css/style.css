@@ -1,0 +1,92 @@
+ html, body, .block 
+  {
+	
+    height: 100%;
+  }
+ 
+  .pin-top {
+    position: relative;
+  }
+  .pin-bottom {
+    position: relative;
+  }
+  .pinned {
+    position: fixed !important;
+  }
+  
+  .b
+  {
+	margin:0;  
+  }
+  
+  
+  .res
+  {
+	margin-top: 0px;
+	  
+  }
+  
+  .bg
+  {
+	  margin-top:-50px;
+	  background: #E8F5E9;
+	  height:900px;
+  }
+  
+  .bgPurple
+  {
+	  margin-top:-10px;
+	  background:#f3e5f5;
+	  height:900px;
+  }
+  .resum
+  {
+	margin-top:50px;
+	 
+  }
+  .cardNav
+  {
+	  margin-top:50px;
+  }
+  .MyWork
+  {
+	
+	  
+  }
+  .workAs
+  {
+	margin-top:-5px;
+	 
+  }
+  .gam
+  {
+	  margin-top:12px;
+  }
+.tabs
+{
+	margin-top:5px;
+}
+
+  .apple
+  {
+	  margin-right:100px;
+  }
+  .memory
+  {
+	  margin-right:40px;
+  }
+  .card
+  {
+	  width:80%;
+	  
+  }
+  
+ 
+  
+  
+  
+  .bg2
+  {
+	  background: none;
+  }
+ 

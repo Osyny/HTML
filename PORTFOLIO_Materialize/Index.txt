@@ -1,0 +1,361 @@
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="msapplication-tap-highlight" content="no">
+    <meta name="description" content="Materialize is a modern responsive CSS framework based on Material Design by Google. ">
+    <title>Pushpin Demo - Materialize</title>
+    <!-- Favicons-->
+    <link rel="apple-touch-icon-precomposed" href="images/favicon/apple-touch-icon-152x152.png">
+    <meta name="msapplication-TileColor" content="#FFFFFF">
+    <meta name="msapplication-TileImage" content="images/favicon/mstile-144x144.png">
+    <link rel="icon" href="images/favicon/favicon-32x32.png" sizes="32x32">
+    <!--  Android 5 Chrome Color-->
+    <meta name="theme-color" content="#EE6E73">
+    <!-- CSS-->
+    <link type="text/css" rel="stylesheet" href="css/materialize.min.css"  media="screen,projection"/>
+    <link href="css/ghpages-materialize.css" type="text/css" rel="stylesheet" media="screen,projection">
+    <link href="http://fonts.googleapis.com/css?family=Inconsolata" rel="stylesheet" type="text/css">
+    <link href="http://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+	<link type="text/css" rel="stylesheet" href="css/style.css"  media="screen,projection"/>
+    <style>
+      html, body, .block {
+        height: 100%;
+      }
+      nav ul li a:hover, nav ul li a.active {
+        background-color: rgba(0,0,0,.1);
+      }
+      footer {
+        padding-left: 0;
+      }
+    </style>
+  </head>
+  <body>
+
+		<div id="blue" class="block red lighten-5">
+			<nav class="pushpin-demo-nav" data-target="blue">
+				
+						<div class=" nav-wrapper pink lighten-4">			
+							<!-- Conteiner Portfolio -->
+							<div class="container">
+								<a href="#" class="brand-logo pink-text text-darken-4">PORTFOLIO</a>
+								<ul id="nav-mobile" class="right hide-on-med-and-down">
+								  <li><a href="#" class="pink-text text-darken-4"> Portfolio</a></li>
+								  <li><a href="#" class="pink-text text-darken-4"> Resume</a></li>
+								  <li><a href="#" class="pink-text text-darken-4"> My work</a></li>
+								</ul>						
+							</div><!-- Conteiner Portfolio -->
+			
+				</div>
+				<!-- Card FOTO -->
+					<div class="container"><!-- Conteiner -->
+						<div class="pin-top col s12 m7">
+							<h2 class="header purple-text text-darken-4"></h2>
+							<div class="card horizontal">
+								<div class="card-image">
+									<img src="img/MyFoto.png">
+								</div>
+								<div class="card-stacked">
+									<div class="card-content">
+									    <span class="black-text">
+										  <h2>Dyka Oksana Vasylivna </h2>
+										  <h4>Date of birth: 14.04.1981</h4>
+										  <h4>Gmail        : oxana1404@gmail.com</h4>
+										  <h4>Fone number  : ......... </h4>       
+									    </span>
+									</div>
+									<div class="card-action  deep-orange-text text-accent-4">
+										<h4> <b>Active search for work in the IT field.</b></h4>	
+										
+									</div>
+								 </div>
+							</div>
+						  </div>
+					</div><!-- Conteiner -->
+				<!-- Card FOTO -->		
+				<!-- Carysel -->
+				<div class="carousel">
+					<a class="carousel-item" href="#one!"><img src="img/ScrinShot/Apple.png"></a>
+					<a class="carousel-item" href="#two!"><img src="img/ScrinShot/Memoryt.png"></a>
+					<a class="carousel-item" href="#three!"><img src="img/ScrinShot/Platformer.png"></a>
+					<a class="carousel-item" href="#four!"><img src="img/ScrinShot/Pytnashky.png"></a>
+					<a class="carousel-item" href="#five!"><img src="img/ScrinShot/shahy.png"></a>
+				</div>
+				<!-- Carysel -->
+			</nav>
+		</div>		
+		
+		
+	<div id="red" class="block green lighten-5">
+		<nav class="pushpin-demo-nav" data-target="red">
+			
+			<div class="nav-wrapper green lighten-4">
+				<!-- Conteiner Resume -->					
+				<div class="container">
+					<a href="#" class="brand-logo indigo-text text-darken-4">Resume</a>
+					<ul id="nav-mobile" class="right hide-on-med-and-down">
+					  <li><a href="#" class="indigo-text text-darken-4"> Portfolio</a></li>
+					  <li><a href="#" class="indigo-text text-darken-4"> Resume</a></li>
+					  <li><a href="#" class="indigo-text text-darken-4"> My work</a></li>
+					</ul>
+				</div><!-- Conteiner Resume -->			
+				
+			</div>	
+			
+			<!-- Bacground -->
+			<div class="row">
+			<div class="bg ">
+				<!-- Resum -->
+					<!-- Conteiner -->
+				<div class="container ">
+				
+				<div class="resum col s12 "> 
+				
+					<div class="center-align   red-text text-darken-4  col s12"><h3 class="z-depth-4">About My</h3></div>	
+					<div class="  purple-text text-darken-4  col s12">
+						<h4 class="z-depth-5">I'm ...-years-old. I live in Kiev.
+						I have experience in the conduct  business by servicing of computer equipment.</h4>
+						<h4 class="z-depth-5"> Currently study in Computer Academy <a href="https://itstep.org/ua/ ">
+							<u class=" red-text text-darken-5">"STEP"</u></a>.   My skills include junior<a class="pink-text text-darken-4 "><b> C, C++, C#</b></a>, and basic<a class="pink-text text-darken-4 "><b> HTML/CSS, AS-3</b></a> .  In the active search for work in the IT field.</h4>
+					</div>
+				</div>	<!-- Resum -->	
+				</div>				
+					<!-- Conteiner -->
+				<div class="container ">
+					<div class=" cardNav  col s12  card-panel amber lighten-5">	
+						<ul id="tabs-swipe-demo" class="tabs">
+							<li class="tab col s4  text-darken-4"><a href="#test-swipe-1"><h6>* Experience work *</h6></a></li>
+							<li class="tab col s4 text-darken-4"><a class="active" href="#test-swipe-2"><h6>* Education *</h6></a></li>
+							<li class="tab col s4  text-darken-4"><a href="#test-swipe-3"><h6>** SKILL **</h6></a></li>
+						</ul>
+						  <div id="test-swipe-1" class="col s12 ">
+							 <div class=" flow-text text1 purple-text text-darken-4">
+								<h5 class="flow-text"> - Administrator Information Technology Center "IT-Service" (Family Business) -- 2010-2013</h5>
+								<h5 class="flow-text"> ** Debugging - Bug fixing - Testing </h5>
+							 </div>
+						  </div>
+						  <div id="test-swipe-2" class="col s12 ">
+							<div class=" flow-text text1 purple-text text-darken-4">
+								<h5 class="flow-text"> - Study in conputer academy "STEP"." -- 2016-2017.</h5>
+								<h5 class="flow-text"> - ActionScript3 courses in teaching and educational center of Kiev "IT Capital." -- 2015.</h5>
+								<h5 class="flow-text"> - Lviv National Academy of veterinary Medicine (Lviv, Ukraine) - specialist engineer.  </h5>
+							 </div>
+						  </div>
+						  <div id="test-swipe-3" class="col s12 ">
+							<div class=" flow-text text1 purple-text text-darken-4">
+								<h5 class="flow-text"> - Knowledge of <b>C, C++, HTML/CSS</b>, AS-3. </h5>
+								<h5 class="flow-text"> - Understanding OOP. </h5>
+								<h5 class="flow-text"> - Skills to work with Visio Studio, QtCreator, Adobe Flash IDE, Adobe Photoshop, Flash Develop. </h5>
+							</div>
+						  </div>
+					</div>
+				</div>
+				<!-- Conteiner -->
+			</div><!-- Bacground -->
+			</div><!-- Row -->
+			
+		</nav>	
+	</div>
+		
+
+		<div id="green" class="block purple lighten-5">
+			<nav class="pushpin-demo-nav" data-target="green">
+				
+				<div class="nav-wrapper purple lighten-4">
+				  <div class="container">
+					<a href="#" class="brand-logo indigo-text text-darken-4">My work </a>
+					<ul id="nav-mobile" class="right hide-on-med-and-down">
+					  <li><a href="#!" class="indigo-text text-darken-4">Portfolio</a></li>
+					  <li><a href="#!" class="indigo-text text-darken-4">Resume</a></li>
+					  <li><a href="#!" class="indigo-text text-darken-4">My work</a></li>
+					</ul>
+				  </div>
+			
+				</div>
+				<!-- Bacground -->
+				<div class="row">
+					<div class="bgPurple">
+							
+						<div class="MyWork col s12 ">
+							
+								<div  class="center-align   red-text text-darken-4  col s12"><h3 class="z-depth-1">AS-3</h3></div>
+					
+								<!-- Conteiner -->
+								<div class="conteiner  ">
+								
+									<div class="col s12 m6 l3">
+													
+											<div class="col s12">
+											  <img src="img/ScrinShot/Apple.png" alt="" > 
+											</div>
+											 <div class="col s12">
+											  <span class="ssulka">
+												<ul class=" ">
+													<li class="tab "><a href="#test2" class="teal-text text-darken-4"><h4><u>Apple</u></h4</a></li>
+												</ul>	
+											  </span>
+											</div> 
+											
+										
+									</div> 
+											
+									<div class="col s12 m6 l3 ">
+										 
+											<div class="col s12 ">
+											  <img src="img/ScrinShot/Pytnashky.png" alt="" > 
+											</div>
+											<div class="col s12">
+											  <span class="ssulka">
+												<ul class=" ">
+													<li class="text-black "><a href="#test2" class="teal-text text-darken-4"><h4><u>Pytnashky</u></h4</a></li>
+												</ul>	
+											  </span>
+											</div>
+										
+									</div>	
+									<div class="col s12 m6 l3">
+										
+											<div class="col s12">
+											  <img src="img/ScrinShot/Platformer.png" alt="" > 
+											</div>
+											<div class="col s12">
+											  <span class="ssulka">
+												<ul class=" ">
+													<li class=""><a href="#test2"class="teal-text text-darken-4"><h4><u>Platformer</u></h4></a></li>
+												</ul>	
+											  </span>
+											</div>
+										
+									</div>	
+									<div class="col s12 m6 l3 ">							 
+											<div class="col s12">
+											  <img src="img/ScrinShot/Memoryt.png" alt="" >
+											</div>
+											<div class="col s12">
+											  <span class="ssulka">
+												<ul class=" ">
+													<li><a href="#test2" class="teal-text text-darken-4"><h4><u>Memory</u></h4></a></li>
+												</ul>	
+											  </span>
+											</div>
+										
+									</div>	
+									
+								</div>  
+								
+							<div class="MyWorkC++ col s12">
+								<div class="center-align   red-text text-darken-4  col s12"><h3 class="z-depth-1">C++</h3></div>	
+								
+								<div class="conteiner  ">
+									<div class="col s12 m6 l3">
+										
+										 
+										<div class="col s12">
+											  <img src="img/ScrinShot/shahy.png" alt="" > 
+											</div>
+											<div class="col s12">
+											  <span class="ssulka">
+												<ul class=" ">
+													<li><a href="#test2" class="teal-text text-darken-4"><h4><u>Shahy</u></h4></a></li>
+												</ul>	
+											  </span>
+										</div>											
+									</div>
+								</div>
+							</div> -->
+										
+						<!-- MyWorc -->
+					</div><!-- Bacground -->		
+				</div>
+			</nav>
+		</div>
+
+		<div class="buysellads buysellads-demo hide-on-small-only">
+		  <a href="#!" class="close"><i class="material-icons">close</i></a>
+		  <!-- CarbonAds Zone Code -->
+		  <script async type="text/javascript" src="//cdn.carbonads.com/carbon.js?zoneid=1673&serve=C6AILKT&placement=materializecss" id="_carbonads_js"></script>
+		</div>
+		<!-- Footrer -->
+    <footer class="page-footer">
+      <div class="container">
+        <div class="row">
+			<div class="col l4 s12">
+				<h5 class="white-text">Help Materialize Grow</h5>
+				<p class="grey-text text-lighten-4">We hope you have enjoyed using Materialize! If you feel Materialize has helped you out and want to support the team, send us over a donation! Any amount would help support and continue development on this project and is greatly appreciated.</p>
+				<form id="paypal-donate" action="https://www.paypal.com/cgi-bin/webscr" method="post" target="_top">
+						<input type="hidden" name="cmd" value="_s-xclick">
+						
+				</form>
+
+		    </div>
+		   <div class="col l4 s12">
+				<h5 class="white-text">Join the Discussion</h5>
+				<p class="grey-text text-lighten-4">We have a Gitter chat room set up where you can talk directly with us. Come in and discuss new features, future goals, general problems or questions, or anything else you can think of.</p>
+				<a class="btn waves-effect waves-light red lighten-3" target="_blank" href="https://gitter.im/Dogfalo/materialize">Chat</a>
+			</div>
+			<div class="col l4 s12" style="overflow: hidden;">
+				<h5 class="white-text">Connect</h5>
+				<iframe src="http://ghbtns.com/github-btn.html?user=dogfalo&repo=materialize&type=watch&count=true&size=large" allowtransparency="true" frameborder="0" scrolling="0" width="170" height="30"></iframe>
+				<br>
+				<a href="https://twitter.com/MaterializeCSS" class="twitter-follow-button" data-show-count="true" data-size="large" data-dnt="true">Follow @MaterializeCSS</a>
+				<br>
+				<div class="g-follow" data-annotation="bubble" data-height="24" data-href="https://plus.google.com/108619793845925798422" data-rel="publisher"></div>
+			</div>
+        </div>
+      </div>
+      <div class="footer-copyright">
+        <div class="container">
+        © 2014-2017 Materialize, All rights reserved.
+        <a class="grey-text text-lighten-4 right" href="https://github.com/Dogfalo/materialize/blob/master/LICENSE">MIT License</a>
+        </div>
+      </div>
+    </footer>
+
+    <!--  Scripts-->
+    <
+
+    <!-- Google Plus Button-->
+    <!--Import jQuery before materialize.js-->
+      <script type="text/javascript" src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
+      <script type="text/javascript" src="js/materialize.min.js"></script>
+
+    <!--  Google Analytics  -->
+    <script>
+   	
+	<!-- My -->
+		$('.pushpin-demo-nav').each(function() {
+		var $this = $(this);
+		var $target = $('#' + $(this).attr('data-target'));
+		$this.pushpin({
+		  top: $target.offset().top,
+		  bottom: $target.offset().top + $target.outerHeight() - $this.height()
+		  
+		});
+	  });
+	  $(document).ready(function(){
+		$('.target').pushpin({
+		  top: 0,
+		  bottom: 1000,
+		  offset: 0
+		});
+	  });
+	  
+	  <!-- CARUSEL -->
+	   $(document).ready(function()
+	   {
+           $('.carousel').carousel();
+	  });
+	  
+	  <!-- Tabs -->
+	  $(document).ready(function(){
+		 $('ul.tabs').tabs('select_tab', 'tab_id');
+	  });
+	</script><!-- My -->
+
+  </div></body>
+</html>
+
+
